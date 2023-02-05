@@ -2,11 +2,8 @@ import { useCallback, useEffect, useState } from "react";
 import * as anchor from "@project-serum/anchor";
 
 import styled from "styled-components";
-import { Container, Snackbar } from "@mui/material";
-import Paper from "@mui/material/Paper";
+import { Container, Snackbar, Paper, Grid, Typography } from "@mui/material";
 import Alert from "@mui/lab/Alert";
-import Grid from "@mui/material/Grid";
-import Typography from "@mui/material/Typography";
 import {
   Commitment,
   Connection,
@@ -466,8 +463,8 @@ const Home = (props: HomeProps) => {
   }, [refreshCandyMachineState]);
 
   return (
-    <Container style={{ marginTop: 100 }}>
-      <Container maxWidth="xs" style={{ position: "relative" }}>
+    <Container>
+      <Container maxWidth="xs">
         <Paper
           style={{
             padding: 24,
