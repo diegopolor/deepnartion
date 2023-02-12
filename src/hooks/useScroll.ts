@@ -4,7 +4,7 @@ export const usePositionScrollY = ()=> {
     const [ scrollPY, setScrollPY ] = useState<number>(0)
 
     window.addEventListener('scroll', ()=> {
-        let { scrollY } = window
+        const { scrollY } = window
         setScrollPY(scrollY)
     })
 

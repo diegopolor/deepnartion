@@ -1,16 +1,19 @@
 import React from 'react';
 import './index.css'
-import Header from './components/header'
-import NFTSection from './components/nft';
-
+import Header from './components/Header'
+import NFT from './components/NFT';
+import WhoYouAre from './components/WhoWeAre';
+import RoadMap from './components/RoadMap';
 
 const App = () => {
   return (
     <>
       <Header />
-      <NFTSection /> 
+      <NFT /> 
+      <WhoYouAre/>
+      <RoadMap />
     </>
-  );
+  )
 };
 
 export default App;

@@ -1,0 +1,24 @@
+.road-map-content{
+  scroll-behavior:unset;
+}
+
+.road-map-content::-webkit-scrollbar  {
+    height: 12px;
+}
+  
+.road-map-content {
+  scrollbar-width: thin !important;
+  scrollbar-color: var(--thumbBG) var(--scrollbarBG) !important;
+}
+  
+.road-map-content::-webkit-scrollbar-track {
+  width: 500px;
+  background: var(--scrollbarBG) !important;
+  border-radius: 10px;
+}
+  
+.road-map-content::-webkit-scrollbar-thumb {
+  background-color: var(--thumbBG) !important;
+  border-radius: 10px !important;
+  border: 3px solid var(--scrollbarBG) !important;
+}
